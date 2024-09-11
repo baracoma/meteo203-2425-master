@@ -11,24 +11,42 @@ In this exercise, you will create a basic plot using the `meteo203` environment.
    - Click on **new** and fill out your repository details below
         - Name: `meteo203-2425-lastname`
         - Set the repository to private
-        - Initialize with a **README.md** file (you can leave this blank)
+        - Initialize with a **README.md** file (leave this blank)
 2. **Setup your local directories**
-    - `$ mkdir meteo203-2425-lastname`
-    - `$ cd meteo203-2425-lastname`
-    - `$ git init`
-    - `$ mkdir exercises`
+   ``` bash
+   mkdir meteo203-2425-lastname
+   cd meteo203-2425-lastname
+   git init
+   git branch -m main # rename master branch to main
+   mkdir exercises
+
+
+   ``` 
+4. **Link your local and remote repositories**
+   ``` bash
+    git remote add origin git@github.com:username/meteo203-2425-lastname.git
     
-3. **Link your local and remote repositories**
-   - `$ git remote add origin git@github.com:username/meteo203-2425-lastname.git`
+    ```
    - Don't forget to replace `username` and `lastname` with yours.
-4. **Add your files, commit, and push**:
-   - `$ git add .`
-   - `$ git commit -m "Initial commit: added exercises folder"`
-   - `$ git push -u origin main`
+5. **Clone the remote repository**:
+    ``` bash
+   git pull origin main
+
+
+   ``` 
+7. **Double click on README.md and edit**
+8. **Upload updated README.md**
+    ```bash 
+    git add README.md
+    git commit -m "Initial commit: updated README.md"
+    git push -u origin main
+
+
+    ```
 
 ### Create a Plot
 
-1. **Navigate to your project folder in the jupyter lab interface**
+1. **Navigate to your project, and then exercises folder in the jupyter lab interface**
 1. **Create a New Jupyter Notebook**:
    - Open a new Jupyter notebook within the `meteo203` environment.
    - Name the notebook `01_BasicPlot.ipynb`.
