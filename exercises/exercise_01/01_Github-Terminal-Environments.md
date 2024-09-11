@@ -4,8 +4,31 @@
 ### Objective
 In this exercise, you will create a basic plot using the `meteo203` environment. You will then commit your work and push it to your GitHub repository using SSH. This exercise will help you practice the essential skills of data visualization and version control.
 
-### Instructions
+### Initialize Github
 
+1. **Create a GitHub Repository**:
+   - Login to [GitHub](https://github.com/)
+   - Click on **new** and fill out your repository details below
+        - Name: `meteo203-2425-lastname`
+        - Set the repository to private
+        - Initialize with a **README.md** file (you can leave this blank)
+2. **Setup your local directories**
+    - `$ mkdir meteo203-2425-lastname`
+    - `$ cd meteo203-2425-lastname`
+    - `$ git init`
+    - `$ mkdir exercises`
+    
+3. **Link your local and remote repositories**
+   - `$ git remote add origin git@github.com:username/meteo203-2425-lastname.git`
+   - Don't forget to replace `username` and `lastname` with yours.
+4. **Add your files, commit, and push**:
+   - `$ git add .`
+   - `$ git commit -m "Initial commit: added exercises folder"`
+   - `$ git push -u origin main`
+
+### Create a Plot
+
+1. **Navigate to your project folder in the jupyter lab interface**
 1. **Create a New Jupyter Notebook**:
    - Open a new Jupyter notebook within the `meteo203` environment.
    - Name the notebook `01_BasicPlot.ipynb`.
@@ -21,7 +44,7 @@ In this exercise, you will create a basic plot using the `meteo203` environment.
    
    ```
    
-3. **Generate Data for the Plot**:
+7. **Generate Data for the Plot**:
     - Create data for a sine wave.
     
     ```python
@@ -32,7 +55,7 @@ In this exercise, you will create a basic plot using the `meteo203` environment.
     
     ```
 
-4. **Create the Plot**:
+8. **Create the Plot**:
     - Plot the sine wave using Matplotlib.
     
     ```python
