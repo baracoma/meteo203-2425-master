@@ -14,13 +14,16 @@ In this exercise, you will create a basic plot using the `meteo203` environment.
         - Initialize with a **README.md** file (leave this blank)
 2. **Setup your local directories**
    ``` bash
+   git config --global user.email "your@email.com"
+   git config --global user.name "Your Name"
    mkdir meteo203-2425-lastname
    cd meteo203-2425-lastname
    git init
    git config --global init.defaultBranch main 
    git branch -m main # rename master branch to main
    mkdir exercises
-
+   touch exercises/myfirstfile.txt
+   git status # check what files are tracked 
 
    ``` 
 4. **Link your local and remote repositories**
@@ -32,22 +35,34 @@ In this exercise, you will create a basic plot using the `meteo203` environment.
 5. **Clone the remote repository**:
     ``` bash
    git pull origin main
-
+   git status # check files again
 
    ``` 
-7. **Double click on README.md and edit**
+7. **Edit README.md by appending today's date. nano controls are below, CTRL + X to exit.**
+   ``` bash
+   nano README.md
+
+   ```
+   
 8. **Upload updated README.md**
-    ```bash 
+    ```bash
+    git status 
     git add README.md
-    git commit -m "Initial commit: updated README.md"
-    git push -u origin main
+    git add exercises
+    git add exercises/myfirstfile.txt
+    git status #check status again
+    git commit -m "Initial commit: updated README.md, included myfirstfile.txt"
+    git push origin main
 
 
     ```
+    
+9. **Check github if files are updated."
 
+    
 ### Create a Plot
 
-1. **Navigate to your project, and then exercises folder in the jupyter lab interface**
+1. **Navigate to your project, and then `exercises` folder in the jupyter lab interface**
 1. **Create a New Jupyter Notebook**:
    - Open a new Jupyter notebook within the `meteo203` environment.
    - Name the notebook `01_BasicPlot.ipynb`.
@@ -93,7 +108,7 @@ In this exercise, you will create a basic plot using the `meteo203` environment.
     - After completing the plot, save your notebook as `01_BasicPlot.ipynb`.
 
 6. **Prepare to Upload to GitHub**:
-    - Ensure that your notebook is saved in the correct directory (e.g., `~/my_courses/meteo203/submissions/`).
+    - Ensure that your notebook is saved in the correct directory (e.g., `~/my_courses/meteo203/exercises/`).
     - Open the terminal within JupyterHub.
 
 7. **Check the Status of Your Repository**:
@@ -109,7 +124,7 @@ In this exercise, you will create a basic plot using the `meteo203` environment.
     - Add the notebook to the staging area:
     ```bash
     
-    git add submissions/01_BasicPlot.ipynb
+    git add exercises/01_BasicPlot.ipynb
     
     
     ```
