@@ -17,6 +17,7 @@ In this exercise, you will create a basic plot using the `meteo203` environment.
    mkdir meteo203-2425-lastname
    cd meteo203-2425-lastname
    git init
+   git config --global init.defaultBranch main 
    git branch -m main # rename master branch to main
    mkdir exercises
 
