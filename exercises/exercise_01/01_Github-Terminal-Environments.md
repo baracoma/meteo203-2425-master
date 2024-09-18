@@ -16,6 +16,7 @@ In this exercise, you will create a basic plot using the `meteo203` environment.
    ``` bash
    git config --global user.email "your@email.com"
    git config --global user.name "Your Name"
+   git config pull.rebase false # configure git behaviour for conflicts
    mkdir meteo203-2425-lastname
    cd meteo203-2425-lastname
    git init
